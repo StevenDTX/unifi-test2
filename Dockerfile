@@ -3,7 +3,7 @@ FROM debian:jessie
 # Set environment variables
 ENV DEBIAN_FRONTEND noninteractive
 
-# Add apt repository keys, non-default sources, update apt database to load new data
+# Add apt repository keys, non-defaul t sources, update apt database to load new data
 # Install deps and mongodb, download unifi .deb, install and remove package
 # Cleanup after apt to minimize image size
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
